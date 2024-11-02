@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zapatillas Informales - Odin's Step</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+</head>
+
+<body>
+    <!-- Menú de navegación -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./img/logo/logo web.png" alt="Logo Zapatillas" class="logo-img">
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <div class="menu-overlay" onclick="toggleMenu()">
+            <ul class="nav-links" onclick="event.stopPropagation()">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#tienda">Tienda</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Carrusel de imágenes -->
+    <section class="carousel-css">
+        <input type="radio" name="slides" id="slide-1" checked>
+        <input type="radio" name="slides" id="slide-2">
+        <input type="radio" name="slides" id="slide-3">
+        
+        <div class="slides">
+            <div class="carousel-image" id="img1">
+                <img src="./img/header/header7.png" alt="Imagen 1">
+            </div>
+            <div class="carousel-image" id="img2">
+                <img src="./img/header/header6.png" alt="Imagen 2">
+            </div>
+            <div class="carousel-image" id="img3">
+                <img src="./img/header/header4.png" alt="Imagen 3">
+            </div>
+        </div>
+        
+        <div class="carousel-controls">
+            <label for="slide-1"></label>
+            <label for="slide-2"></label>
+            <label for="slide-3"></label>
+        </div>
+    </section>
+
+    <!-- Categorías de Productos -->
+    <section class="categorias-container">
+        <div class="categoria" id="ninos">
+            <img src="./img/categorias/niños.jpg" alt="Niños">
+            <div class="overlay"><span>Niños</span></div>
+        </div>
+        <div class="categoria" id="hombres">
+            <img src="./img/categorias/hombres.jpg" alt="Hombres">
+            <div class="overlay"><span>Hombres</span></div>
+        </div>
+        <div class="categoria" id="mujeres">
+            <img src="./img/categorias/mujeres.jpg" alt="Mujeres">
+            <div class="overlay"><span>Mujeres</span></div>
+        </div>
+    </section>
+
+    <!-- Sección de Marcas -->
+    <section class="productos-container" id="productos">
+        <h2>Marcas</h2>
+        <div class="productos-grid">
+            <div class="producto"><img src="./img/marcas/adidas.png" alt="Zapatilla Adidas"></div>
+            <div class="producto"><img src="./img/marcas/jordan.png" alt="Zapatilla Jordan"></div>
+            <div class="producto"><img src="./img/marcas/lacoste.png" alt="Zapatilla Lacoste"></div>
+            <div class="producto"><img src="./img/marcas/nike.png" alt="Zapatilla Nike"></div>
+            <div class="producto"><img src="./img/marcas/vans.png" alt="Zapatilla Vans"></div>
+        </div>
+    </section>
+
+    <!-- Sección de Novedades -->
+    <section class="productos-container" id="novedades">
+        <h2>Novedades</h2>
+        <div class="productos-grid">
+            <div class="producto"><img src="./img/zapatos/black cat.jpg" alt="Zapatilla Black Cat"></div>
+            <div class="producto"><img src="./img/zapatos/dunk.jpg" alt="Zapatilla Dunk"></div>
+            <div class="producto"><img src="./img/zapatos/gazelle.jpg" alt="Zapatilla Gazelle"></div>
+            <div class="producto"><img src="./img/zapatos/puma.jpg" alt="Zapatilla Puma"></div>
+            <div class="producto"><img src="./img/zapatos/samba.jpg" alt="Zapatilla Samba"></div>
+        </div>
+    </section>
+
+<!-- Nueva galería dinámica -->
+<section class="dynamic-gallery">
+    <div class="gallery-item vertical">
+        <img src="./img/anuncios/anuncio5.png" alt="Imagen 1">
+    </div>
+    <div class="gallery-item medium">
+        <img src="./img/anuncios/anuncio4.png" alt="Imagen 2">
+    </div>
+    <div class="gallery-item small">
+        <img src="./img/anuncios/anuncio1.png" alt="Imagen 3">
+    </div>
+    <div class="gallery-item large">
+        <img src="./img/anuncios/anuncio6.png" alt="Imagen 4">
+    </div>
+    <div class="gallery-item horizontal">
+        <img src="./img/anuncios/anuncio3.png" alt="Imagen 5">
+    </div>
+</section>
+
+    <!-- Sección NetArt -->
+    <section class="netart-section">
+        <div class="abstract-container">
+            <div class="abstract-shape shape1"></div>
+            <div class="abstract-shape shape2"></div>
+            <div class="abstract-shape shape3"></div>
+            <div class="abstract-shape shape4"></div>
+            <div class="abstract-text">Art in Motion</div>
+        </div>
+    </section>
+
+    <!-- Proyecto interactivo con p5.js -->
+    <section class="p5-project">
+        <h2>Proyecto Interactivo con p5.js</h2>
+        <div id="p5js"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>Sobre Odin's Step</h3>
+                <p>Somos tu tienda de confianza para zapatillas informales de las mejores marcas.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#tienda">Tienda</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contacto</h3>
+                <p>Email: contacto@odinsstep.com</p>
+                <p>Teléfono: +34 123 456 789</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 Odin's Step | Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="./js/p5js/sketch.js" defer></script>
+    <script src="./js/carousel.js" defer></script>
+</body>
+
+</html>
+
